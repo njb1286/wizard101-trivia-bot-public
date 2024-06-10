@@ -1,0 +1,19 @@
+{
+    "name": "Wizard101 Trivia Bot",
+    "version": "4.0",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.wizard101.com/quiz/*",
+                "https://www.wizard101.com/game/trivia"
+            ],
+            "js": [
+                "trivia-bot.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "activeTab"
+    ]
+}
